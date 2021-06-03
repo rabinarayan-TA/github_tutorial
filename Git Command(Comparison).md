@@ -8,11 +8,25 @@ All the required command for GIT
 
 ## Table of Contents
 
-1. [Comparison Scenario](#Comparison-Scenario)
-2. [Branches](#Branches)
-3. [Rebasing](#Rebasing)
-4. [Collaboration](#collaboration)
+1. [The Basics](#The-Basics)
+2. [Comparison Scenario](#Comparison-Scenario)
+3. [Branches](#Branches)
+4. [Rebasing](#Rebasing)
 5. [FAQs](#faqs)
+
+### **_The Basics_**
+
+---
+
+#### How to connect a Repo in you local machine to Github :
+
+```
+Steps:
+1.Create an empty Repository in Github
+2.git remote add <name> <url> (standard name is origin)
+3.git push -u <remote> <branch_name> (ex.git push origin master)
+git remote -v : list all the remote repository
+```
 
 ### **_Comparison Scenario_**
 
@@ -125,7 +139,7 @@ It's basically used to combining two branch like merging . The main difference b
 1. https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase
 2. https://www.atlassian.com/git/tutorials/merging-vs-rebasing#the-golden-rule-of-rebasing
 
-### **_Stashing_**
+### **_Git alias_**
 
 ---
 
