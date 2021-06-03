@@ -111,3 +111,24 @@ others. If you have already pushed commits up to
 Github...DO NOT rebase them unless you are positive
 no one on the team is using those commits.
 ```
+
+**When to Use**
+
+```
+It's basically used to combining two branch like merging . The main difference between Merging ang Rebasing is that while we do merging we get some unnecessary commit merging which makes commit history unreadable and not understandable . For a big project the graph will be messy .But while we do Rebasing ,then we can avoid commit merge messages and all the commit takes place in linear and sequence manner which is easy to understand for other people.
+      note :- 1. git rebase branch_name
+              2. git rebase -i HEAD~n
+                  n : no of commits you want to show
+              3. During conflict procedure should be First Rebase -> resolve the conflict ->  add the file ->git rebase --continue
+```
+
+1. https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase
+2. https://www.atlassian.com/git/tutorials/merging-vs-rebasing#the-golden-rule-of-rebasing
+
+### **_Stashing_**
+
+---
+
+```
+
+```
