@@ -28,6 +28,21 @@ Steps:
 git remote -v : list all the remote repository
 ```
 
+#### Merging Pull Request with Conflicts :
+
+```
+Steps:
+1.Switch to the branch in question. Merge in master and resolve the conflicts.
+  -> git fetch origin
+  -> git branch my-new-feature
+  -> git merge master
+  -> Fix conflict!
+2.Switch to master. Merge in the feature branch (now with no conflicts).Push changes up to Github.
+  -> git branch master
+  -> git merge my-new-feature
+  -> git push origin master
+```
+
 ### **_Comparison Scenario_**
 
 ---
