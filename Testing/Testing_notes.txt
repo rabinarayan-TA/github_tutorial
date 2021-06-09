@@ -1,0 +1,3 @@
+coverage run -m pytest- to run
+coverage report -m -> to get report
+coverage html -> in html format
