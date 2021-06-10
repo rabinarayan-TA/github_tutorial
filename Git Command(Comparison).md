@@ -154,10 +154,20 @@ It's basically used to combining two branch like merging . The main difference b
 1. https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase
 2. https://www.atlassian.com/git/tutorials/merging-vs-rebasing#the-golden-rule-of-rebasing
 
-### **_Git alias_**
+### **_Undoing Changes_**
 
 ---
 
-```
+- Checking out old commits :
 
 ```
+For Ex:
+      Suppose there are 5 commit like c1,c2,c3,c4,c5 in this order. c5 is the latest commit
+```
+
+Head usually refer to the branch not a specific commit that means HEAD -> Master -> c5
+git command : git checkout <commit_harsh> (git commit c3).
+Then it will pop up a message saying head detached that means HEAD -> c3 , master ->c5
+
+- Re-Attaching our Detached Head:
+  ` "git switch master" : It will re-attached to master . Another way is to creat a new branch from a specific commit . For this follow git checkout <commit_harsh> -> git checkout -b <branch_name>`
